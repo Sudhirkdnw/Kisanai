@@ -23,10 +23,10 @@ def aboutus(request):
 def pricing(request):
     return render(request,'Frontend/index/pricing.html')
 
-def shop(request):
-    # product_list = Product.objects.all()
-    # context = {'product_list':product_list}
-    return render(request,'Frontend/index/shop.html',)
+# def shop(request):
+#     product_list = Product.objects.all()
+#     context = {'product_list':product_list}
+#     return render(request,'Frontend/index/shop.html',)
 
 # def product_details(request, id):
 
