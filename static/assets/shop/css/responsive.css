@@ -1,20 +1,17 @@
 /* ====================================================
     Responsive
 ==================================================== */
+
 /* Desktop 1200 - up */
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
     }
 }
-/* Desktop 1400 - up */
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1300px;
-    }
-}
 
 /* Normal desktop :992px. (Laptop 14") */
+
 @media (min-width: 992px) and (max-width: 1199px) {
     /* Global */
     h1 {
@@ -35,11 +32,10 @@
     h6 {
         font-size: 16px;
     }
-
 }
 
- 
 /* Tablet device :768px. */
+
 @media (min-width: 768px) and (max-width: 991px) {
     /* Global */
     body {
@@ -66,11 +62,10 @@
     p {
         font-size: 14px;
     }
-
 }
 
- 
 /* small mobile :320px. */
+
 @media (max-width: 767px) {
     /* Global */
     body {
@@ -97,5 +92,4 @@
     p {
         font-size: 14px;
     }
-
 }
