@@ -18,7 +18,7 @@ urlpatterns = [
     path('helpcenter/', views.helpcenter, name='helpcenter'),
     path('forget_password/', views.forget_password, name='forgetpassword'),
     path('contact/', views.contact, name='contact'),
-    path('shop/', views.shop, name='shop'),
-    path('product/<int:id>/', views.product_details, name='product_details'),
+   # path('shop/', views.shop, name='shop'),
+   # path('product/<int:id>/', views.product_details, name='product_details'),
 
 ]
