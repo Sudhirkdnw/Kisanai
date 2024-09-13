@@ -2,7 +2,7 @@
   "builds": [
     {
       "src": "build_files.sh",
-      "use": "@vercel/static",
+      "use": "@vercel/static-build",
       "config": {
         "distDir": "staticfiles"
       }
@@ -13,5 +13,6 @@
       "src": "/(.*)",
       "dest": "api/wsgi.py"
     }
-  ]
+  ],
+  "outputDirectory": "staticfiles"
 }
