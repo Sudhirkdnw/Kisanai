@@ -17,10 +17,21 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth.urls import views as auth_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('example.urls')),
+    path('shop/',include('shop.urls')),
+    path('ai/',include('resources.urls')),
+    path('iot/',include('smartirrigation.urls')),
+    path('community/',include('community.urls')),
+    # path('app/',include('App.urls')),
+    
+    
+    #for Auth
+    path('accounts/',include('django.contrib.auth.urls')),
     
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
