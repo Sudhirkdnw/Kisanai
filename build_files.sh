@@ -1,17 +1,18 @@
+
 echo "BUILD START"
 
-# Activate virtual environment
-source venv/bin/activate
-
 # Install dependencies
-pip install --upgrade pip
 pip install -r requirements.txt
 
-# Run Django commands
+# Run Django management commands
 python manage.py makemigrations
 python manage.py migrate
 python manage.py tailwind install
+
+# Collect static files
 python manage.py collectstatic --noinput
+
+# Start tailwind (if needed, otherwise remove this line)
 python manage.py tailwind start
 
-echo "MIGRATION END"
+echo "BUILD COMPLETE"
