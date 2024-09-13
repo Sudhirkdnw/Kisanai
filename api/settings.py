@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'example'
+    'example',
     'shop',
     'resources',
     'community',
@@ -88,7 +88,7 @@ DATABASES = {
         'USER': config('DB_USER'),
         'HOST': config('DB_HOST'),
         'PASSWORD': config('DB_PASSWORD'),
-        'PORT': config('DB_PORT',)
+        'PORT': config('DB_PORT', default='5432'),
     }
 }
 
